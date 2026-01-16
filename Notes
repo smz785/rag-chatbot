@@ -1,0 +1,5 @@
+Key limitations:
+
+1.Embedding quality varies: nomic-embed-text is good enough for demos, not always for production.
+2.No guaranteed citations: still enforcing grounding in prompts.
+3.Compute: if laptop is weak, the chatbot will be slow. That’s not a code issue.
