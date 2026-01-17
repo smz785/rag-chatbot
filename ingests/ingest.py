@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 from langchain_community.vectorstores import FAISS
 from app.config import load_settings
-from app.providers import get_embeddings, get_chatbot_llm
+from app.providers import get_embeddings
 from ingests.loaders import load_pdfs
 from ingests.chunking import chunk_docs
 

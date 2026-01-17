@@ -42,6 +42,6 @@ def load_settings() -> Settings:
         rag_top_k = _env_int("RAG_TOP_K", 8),
         chunk_size = _env_int("CHUNK_SIZE", 800),
         chunk_overlap = _env_int("CHUNK_OVERLAP", 120),
-        index_dir = _env("INDEX_DIR", 'app/indexes/faiss'),
-        pdf_dir = _env("PDF_DIR", 'app/data/pdfs')
+        index_dir = _env("INDEX_DIR","indexes/faiss"),
+        pdf_dir = _env("PDF_DIR", "data/pdfs"),
     )
