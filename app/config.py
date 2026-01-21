@@ -29,6 +29,12 @@ class Settings:
    chunk_overlap: int
    index_dir: str
    pdf_dir: str
+   # routing
+   doc_index_dir: str
+   doc_route_top_n: int # how many docs to route to
+   chunk_fetch_k: int # retrieve this many chunks before filtering
+   doc_text_max_chars: int # how much text to use to represent each doc
+
 
 def load_settings() -> Settings:
     llm_provider = _env("LLM_PROVIDER", 'ollama').lower()
@@ -42,6 +48,12 @@ def load_settings() -> Settings:
         rag_top_k = _env_int("RAG_TOP_K", 8),
         chunk_size = _env_int("CHUNK_SIZE", 800),
         chunk_overlap = _env_int("CHUNK_OVERLAP", 120),
-        index_dir = _env("INDEX_DIR","indexes/faiss"),
+        index_dir = _env("INDEX_DIR","indexes/chunk_idx"),
         pdf_dir = _env("PDF_DIR", "data/pdfs"),
+        # routing
+        doc_index_dir = _env("DOC_INDEX_DIR", "indexes/doc_idx"),
+        doc_route_top_n = _env_int("DOC_ROUTE_TOP_N", 3), # how many docs to route to
+        chunk_fetch_k = _env_int("CHUNK_FETCH_K", 40),  # retrieve this many chunks before filtering
+        doc_text_max_chars = _env_int("DOC_TEXT_MAX_CHARS",12000),  # how much text to use to represent each doc
+
     )

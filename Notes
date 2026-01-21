@@ -3,3 +3,47 @@ Key limitations:
 1.Embedding quality varies: nomic-embed-text is good enough for demos, not always for production.
 2.No guaranteed citations: still enforcing grounding in prompts.
 3.Compute: if laptop is weak, the chatbot will be slow. That’s not a code issue.
+
+Output:
+{
+  "answer": "Semantic data modeling refers to the process of creating a graph-based model that represents data as nodes (semantic objects), edges (relationships between objects), attributes (properties of objects), and measures (aggregate metrics). This approach enables the use of semantic data models directly with SQL, allowing for more flexible and efficient querying of complex business logic.",
+  "sources": [
+    {
+      "source": "Semantic Data Modeling, Graph Query, and SQL,.pdf",
+      "page": 0,
+      "chunk_id": 4
+    },
+    {
+      "source": "Semantic Data Modeling, Graph Query, and SQL,.pdf",
+      "page": 4,
+      "chunk_id": 6
+    },
+    {
+      "source": "Semantic Data Modeling, Graph Query, and SQL,.pdf",
+      "page": 7,
+      "chunk_id": 6
+    }
+  ],
+  "snippets": [
+    {
+      "source": "Semantic Data Modeling, Graph Query, and SQL,.pdf",
+      "page": 0,
+      "chunk_id": 4,
+      "text": "personal and corporate Web sites with the appropriate attribution, provided that you attribute the original work to the authors and CIDR 2026. 16th Annual Conference on Innovative Data Systems Research (CIDR ’26). January 18-21, Chaminade, "
+    },
+    {
+      "source": "Semantic Data Modeling, Graph Query, and SQL,.pdf",
+      "page": 4,
+      "chunk_id": 6,
+      "text": "4.1 Semantic data graphs We’ll now show how we can use the features described above as part of a more complete solution for semantic data modeling. We build the semantic data model as a graph, which we call a semantic data graph. The graph "
+    },
+    {
+      "source": "Semantic Data Modeling, Graph Query, and SQL,.pdf",
+      "page": 7,
+      "chunk_id": 6,
+      "text": "over typical approaches using semantic layers built above SQL. Supporting SQL queries solves the analysis cliff and data siloing problems inherent with non-SQL data modeling languages and APIs. Models can be built incrementally and are back"
+    }
+  ],
+  "retrieved_count": 4,
+  "used_count": 3
+}
